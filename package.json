@@ -1,11 +1,10 @@
 {
   "name": "html-boilerplate",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Base template for all html landing pages",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-        "compilecss": "node-sass --watch scss -o css"
+    "compilecss": "sass --watch scss/main.scss:css/main.css"
   },
   "repository": {
     "type": "git",
@@ -18,11 +17,19 @@
   },
   "homepage": "https://github.com/lalitrane/html-boilerplate#readme",
   "dependencies": {
-    "bootstrap": "^4.3.1",
-    "jquery": "^3.4.1",
-    "owl-carousel": "^1.0.0"
+    "aos": "^2.3.4",
+    "bootstrap": "^5.2.0",
+    "bootstrap-icons": "^1.10.2",
+    "jquery": "^3.6.0",
+    "tiny-slider": "^2.9.4"
   },
   "devDependencies": {
-    "node-sass": "^4.12.0"
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-terser": "^2.1.0",
+    "sass": "^1.49.11"
   }
 }
