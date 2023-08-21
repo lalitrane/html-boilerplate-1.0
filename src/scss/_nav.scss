@@ -1,0 +1,164 @@
+header {
+    .container {
+        overflow: auto;
+    }
+}
+main {
+    margin-top: 30px;
+}
+
+.fixed-top {
+    background: #fff;
+    box-shadow: 0px 0px 4px #ccc;
+}
+
+.mobile-nav-toggle {
+    position: absolute;
+    right: 10px;
+    z-index: 99999;
+}
+
+.mobile-nav-active {
+    overflow: hidden;
+}
+
+.mobile-nav-active .mobile-nav {
+    left: 0;
+}
+
+.mobile-nav-toggle {
+    img {
+        max-width: 35px;
+        margin-right: 25px;
+    }
+}
+
+.mobile-nav-toggle {
+    position: fixed;
+    right: 0;
+    top: 40px;
+    z-index: 9998;
+    border: 0;
+    background: none;
+    font-size: 24px;
+    transition: all 0.4s;
+    outline: none !important;
+    line-height: 1;
+    cursor: pointer;
+    text-align: right;
+}
+
+.mobile-nav-toggle i {
+    margin: 18px 18px 0 0;
+    color: #004289;
+}
+
+.mobile-nav-overly {
+    width: 100%;
+    height: 100%;
+    z-index: 9997;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: rgba(185, 185, 185, 0.8);
+
+    display: none;
+}
+
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 9999;
+
+    left: -260px;
+    width: 260px;
+    padding-top: 18px;
+
+    background: #ffffff;
+    transition: 0.4s;
+
+    ul {
+        margin-top: 30px;
+        li {
+            list-style-type: none;
+            list-style-type: none;
+            color: $grey;
+            font-size: 20px;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            text-align: center;
+            border-bottom: 1px solid #e0e0e0;
+
+            &:last-child {
+                border-bottom: 0px;
+            }
+
+            a {
+                color: $grey;
+                font-weight: 600;
+            }
+
+            .active {
+                color: $green;
+            }
+        }
+    }
+}
+.main-nav {
+    margin-top: 10px !important;
+    ul {
+        li {
+            position: relative;
+            white-space: nowrap;
+            float: left;
+            a {
+                color: $grey;
+                text-decoration: none;
+                display: block;
+                position: relative;
+                padding: 10px 20px;
+                font-size: 16px;
+                font-weight: 600;
+            }
+
+            .active {
+                color: $green;
+            }
+        }
+    }
+}
+
+.main-nav,
+.main-nav * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footernav {
+    float: left;
+
+    @include media-breakpoint-down(sm) {
+        float: none;
+    }
+    ul {
+        list-style-type: none;
+        color: #fff;
+    }
+
+    li {
+        display: inline-block;
+
+        @include media-breakpoint-down(sm) {
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: #fff;
+            margin-right: 20px;
+        }
+    }
+}

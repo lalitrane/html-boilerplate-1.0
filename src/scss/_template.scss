@@ -1,16 +1,9 @@
-// @import "reset";
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
-@import "../node_modules/aos/dist/aos.css";
-@import "bootstrapicons.scss";
-@import "variables";
-@import "tinyslider";
-@import "responsive";
-@import "nav";
-
 * {
     font-family: "Montserrat", sans-serif;
 }
-
+h1 {
+    color: #ff0000;
+}
 .copyright {
     background: #313131;
 }
@@ -19,8 +12,8 @@
     img {
         max-width: 225px;
 
-        @include xs {
-            // margin-top: 25px;
+        @include media-breakpoint-down(sm) {
+            margin-top: 25px;
         }
     }
 }
@@ -35,7 +28,7 @@
             font-size: 12px !important;
             color: #bfbfbf;
         }
-        @include xs {
+        @include media-breakpoint-down(sm) {
             margin: 10px;
             display: block;
         }

@@ -1,7 +1,7 @@
 {
   "name": "html-boilerplate",
   "version": "2.0.0",
-  "description": "Base template for all html landing pages",
+  "description": "Base template for all html landing pages with support of Header & footer includes",
   "main": "index.js",
   "scripts": {
     "compilecss": "sass --watch scss/main.scss:css/main.css"
@@ -20,6 +20,7 @@
     "aos": "^2.3.4",
     "bootstrap": "^5.2.0",
     "bootstrap-icons": "^1.10.2",
+    "browser-sync": "^2.29.3",
     "jquery": "^3.6.0",
     "tiny-slider": "^2.9.4"
   },
@@ -28,6 +29,7 @@
     "gulp-autoprefixer": "^8.0.0",
     "gulp-clean-css": "^4.3.0",
     "gulp-concat": "^2.6.1",
+    "gulp-file-include": "^2.3.0",
     "gulp-sass": "^5.1.0",
     "gulp-terser": "^2.1.0",
     "sass": "^1.49.11"
