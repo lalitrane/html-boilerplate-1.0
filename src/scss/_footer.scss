@@ -1,0 +1,43 @@
+.copyright {
+    background: #313131;
+    padding: 20px 0;
+    span {
+        font-size: 12px !important;
+        color: #bfbfbf;
+        margin-right: 20px;
+        a {
+            font-size: 12px !important;
+            color: #bfbfbf;
+        }
+        @include media-breakpoint-down(sm) {
+            margin: 10px;
+            display: block;
+        }
+    }
+}
+.footernav {
+    float: left;
+
+    @include media-breakpoint-down(sm) {
+        float: none;
+    }
+    ul {
+        list-style-type: none;
+        color: #fff;
+    }
+
+    li {
+        display: inline-block;
+
+        @include media-breakpoint-down(sm) {
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: #fff;
+            margin-right: 20px;
+        }
+    }
+}

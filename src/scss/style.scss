@@ -1,9 +1,23 @@
+@import "variables";
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 @import "../../node_modules/aos/dist/aos.css";
-// @import "reset";
 @import "bootstrapicons.scss";
-@import "variables";
+@import "header";
+@import "nav";
 @import "template";
 @import "tinyslider";
-@import "responsive";
-@import "nav";
+
+main {
+    margin-top: 30px;
+}
+
+.js div#preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    background: #fff url("https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif") no-repeat center center;
+}

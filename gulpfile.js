@@ -76,6 +76,7 @@ async function includeHTML() {
     return gulp.src([
         'src/html/**/*.html',
         '!src/html/header.html', // ignore
+        '!src/html/nav.html', // ignore
         '!src/html/footer.html' // ignore
     ])
         .pipe(fileinclude({
