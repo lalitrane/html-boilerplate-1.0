@@ -1,5 +1,6 @@
-# HTML Boilerplate
+# :rocket: HTML Boilerplate
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 This repository contains a starter HTML boilerplate with SCSS, Bootstrap, jQuery, Tiny Slider, AOS (Animate On Scroll), and Gulp automations for common tasks like autoprefixing, concatenation, Sass compilation, minification, and file inclusion.
 
 ## Features
@@ -33,7 +34,7 @@ npm run dev
 
 Your development server will be running at http://localhost:3000.
 
-# Directory Structure
+## Directory Structure
 
 - `src/`: Contains the source files for your project.
 - `index.html`: Main HTML file with file includes for better organization.
@@ -62,9 +63,13 @@ Your development server will be running at http://localhost:3000.
   - `gulp-terser`: Minifies JavaScript.
   - `gulp-file-include`: Includes files into HTML.
 
+## Author
+
+- [Lalit Rane](https://lalitrane.dev)
+
 ## Contributing
 
 Feel free to contribute to this
 
-License
-This project is licensed under the MIT License.
+###License
+This project is open source and available under the [MIT License](LICENSE).
